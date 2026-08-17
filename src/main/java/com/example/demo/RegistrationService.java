@@ -15,6 +15,12 @@ public class RegistrationService {
     }
 
     public Registration addRegistration(Registration registration) {
+
+        if (registration.getName() == null ||
+            registration.getName().isBlank()) {
+            throw new IllegalArgumentException("Name cannot be empty");
+        }
+
         registrations.add(registration);
         return registration;
     }
