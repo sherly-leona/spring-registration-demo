@@ -6,6 +6,7 @@ public class Registration {
     private String name;
     private String email;
     private String eventName;
+    private String phoneNumber;
 
     public Registration() {
     }
@@ -15,6 +16,7 @@ public class Registration {
         this.name = name;
         this.email = email;
         this.eventName = eventName;
+        this.phoneNumber = phoneNumber;
     }
 
     public int getId() {
@@ -47,5 +49,11 @@ public class Registration {
 
     public void setEventName(String eventName) {
         this.eventName = eventName;
+    }
+    public String getPhoneNumber() {
+    	return phoneNumber;
+    }
+    public void setPhoneNumber(String phoneNumber) {
+    	this.phoneNumber = phoneNumber;
     }
 }
